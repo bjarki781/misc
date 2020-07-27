@@ -1,21 +1,3 @@
-﻿
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7. Lítið Haskell forrit sem spýtir út úr sér alla mögulegar lausnir á dulkóðuninni. Leitað handvirkt í gegnum þær með grep the
-
 -- ci.hs
 toLetter n = toEnum (n + 97)
 fromLetter c = fromEnum c - 97
@@ -36,9 +18,3 @@ str a' b' c = show a' ++ " " ++ show b' ++ ": " ++ map (g a' b') c
 main = do
     c <- readFile "ciphertext.txt"
     mapM_ print (m c)
-
-
-> ./ci | grep the
-...
-alan turing was a brilliant british mathematician
-...
